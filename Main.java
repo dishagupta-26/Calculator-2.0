@@ -11,6 +11,7 @@ public class Main {
         double a, b;
         while (true) {
             try {
+                // displaying the menu
                 System.out.println("\n====== Calculator Menu ======");
                 System.out.println("1. Addition");
                 System.out.println("2. Subtraction");
@@ -24,6 +25,7 @@ public class Main {
 
                 choice = Integer.parseInt(sc.nextLine());
 
+                // handling the choice
                 switch (choice) {
                     case 1:
                         System.out.print("Enter two numbers: ");
@@ -72,19 +74,22 @@ public class Main {
                         System.out.println("Invalid choice. Please choose between 1 to 8.");
                 }
             } catch (NumberFormatException e) {
+                // handle invalid input for numbers
                 System.out.println("Input Error: Please enter valid numeric input.");
             } catch (InputMismatchException e) {
+                // handle invalid input for choice
                 System.out.println("Input Mismatch: Invalid data type entered.");
                 sc.next(); // clear buffer
             } catch (ArithmeticException e) {
+                // handle division by zero
                 System.out.println("Math Error: " + e.getMessage());
             } catch (IllegalArgumentException e) {
+                // handle illegal argument for square root
                 System.out.println("Illegal Argument: " + e.getMessage());
             } catch (Exception e) {
+                // handle any other unexpected exceptions
                 System.out.println("Unexpected Error: " + e.getMessage());
             }
         }
-
     }
-
 }
