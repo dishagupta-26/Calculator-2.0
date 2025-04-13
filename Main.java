@@ -24,7 +24,53 @@ public class Main {
 
                 choice = Integer.parseInt(sc.nextLine());
 
-                
+                switch (choice) {
+                    case 1:
+                        System.out.print("Enter two numbers: ");
+                        a = Double.parseDouble(sc.nextLine());
+                        b = Double.parseDouble(sc.nextLine());
+                        Addition.add(a, b);
+                        break;
+                    case 2:
+                        System.out.print("Enter two numbers: ");
+                        a = Double.parseDouble(sc.nextLine());
+                        b = Double.parseDouble(sc.nextLine());
+                        Subtraction.subtract(a, b);
+                        break;
+                    case 3:
+                        System.out.print("Enter two numbers: ");
+                        a = Double.parseDouble(sc.nextLine());
+                        b = Double.parseDouble(sc.nextLine());
+                        Multiplication.multiply(a, b);
+                        break;
+                    case 4:
+                        System.out.print("Enter two numbers: ");
+                        a = Double.parseDouble(sc.nextLine());
+                        b = Double.parseDouble(sc.nextLine());
+                        Division.divide(a, b);
+                        break;
+                    case 5:
+                        System.out.print("Enter a number: ");
+                        a = Double.parseDouble(sc.nextLine());
+                        Square.square(a);
+                        break;
+                    case 6:
+                        System.out.print("Enter a number: ");
+                        a = Double.parseDouble(sc.nextLine());
+                        Cube.cube(a);
+                        break;
+                    case 7:
+                        System.out.print("Enter a number: ");
+                        a = Double.parseDouble(sc.nextLine());
+                        SquareRoot.squareRoot(a);
+                        break;
+                    case 8:
+                        System.out.println("Exiting...");
+                        sc.close();
+                        return;
+                    default:
+                        System.out.println("Invalid choice. Please choose between 1 to 8.");
+                }
             }
         }
 
