@@ -71,6 +71,17 @@ public class Main {
                     default:
                         System.out.println("Invalid choice. Please choose between 1 to 8.");
                 }
+            } catch (NumberFormatException e) {
+                System.out.println("Input Error: Please enter valid numeric input.");
+            } catch (InputMismatchException e) {
+                System.out.println("Input Mismatch: Invalid data type entered.");
+                sc.next(); // clear buffer
+            } catch (ArithmeticException e) {
+                System.out.println("Math Error: " + e.getMessage());
+            } catch (IllegalArgumentException e) {
+                System.out.println("Illegal Argument: " + e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Unexpected Error: " + e.getMessage());
             }
         }
 
