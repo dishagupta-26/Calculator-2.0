@@ -1,7 +1,5 @@
 # 🧮 Java Calculator Application
 
----
-
 ## 📘 Description
 This is a modular Java-based calculator application that supports the following operations:
 - Addition
@@ -14,12 +12,10 @@ This is a modular Java-based calculator application that supports the following 
 
 Each functionality is implemented in a **separate Java file**, adhering to clean code principles and coding guidelines.
 
----
-
 ## 📂 Project Structure
 ```
-CalculatorApp/
-├── Calculator.java        # Main menu and control logic
+Calculator2.0/
+├── Main.java              # Main menu and control logic
 ├── Addition.java          # Contains addition logic
 ├── Subtraction.java       # Contains subtraction logic
 ├── Multiplication.java    # Contains multiplication logic
@@ -30,8 +26,6 @@ CalculatorApp/
 └── README.md              # Project documentation
 ```
 
----
-
 ## 🧩 Exception Handling
 The program makes use of multiple **inbuilt Java exceptions** for safe execution:
 - `ArithmeticException` – Catches divide-by-zero errors
@@ -39,8 +33,6 @@ The program makes use of multiple **inbuilt Java exceptions** for safe execution
 - `NumberFormatException` – Handles improper numeric conversions
 - `IllegalArgumentException` – Catches invalid logic like √(negative number)
 - `Exception` – Catch-all fallback for unknown errors
-
----
 
 ## 🛠️ How to Run
 1. Clone the repository:  
